@@ -259,9 +259,7 @@ external testing was performed using virtually simulated CT and CXR images to an
         Confusion matrix of case-level COVID-19 detection performance of (a) CT and (b) CXR models. Training dataset is shown in rows
 and testing dataset in columns; diagonal represents internal validation, while off-diagonal entries are external testing. Additional external
 testing on simulated images is shown on the right. Performance is reported as receiver operating characteristic area under the curve with
-95% confidence interval. All models generally performed worse on external testing with both clinical and simulated data. However, models
-trained with the union datasets (U-10 CT and U-3 CXR) consistently yielded the highest external testing performance. Furthermore,
-simulation testing consistently provided intermediate results that may be more indicative of true performance.      </h2>
+95% confidence interval.</h2>
     </div>
 
     <div class="item">
@@ -277,6 +275,107 @@ wide range of effective dose. Error bars correspond to 95% confidence interval.
 </div>
 </section>
 <!-- End image carousel -->
+
+
+
+<!-- Results / Figures Section -->
+<section class="section">
+  <div class="container">
+
+    <!-- Figure 1 -->
+    <div class="columns is-centered">
+      <div class="column is-10 has-text-centered">
+        <img src="static/images/Figure1.png" alt="Study design overview">
+        <p class="subtitle has-text-centered">
+          <strong>Study design overview.</strong>
+          12,844 CT and 25,219 CXR images for COVID-19 diagnosis were drawn from
+          13 clinical datasets comprising single or multiple centers (Supplement Fig. 1–2).
+          Multiple deep-learning-based models were developed using these datasets.
+          All models underwent internal testing (held-out from the same training dataset)
+          and external testing (all other datasets). Additional external testing was performed
+          using virtually simulated CT and CXR images to analyze the effects of patient
+          and imaging physics factors.
+        </p>
+      </div>
+    </div>
+
+    <!-- Figure 2 -->
+    <div class="columns is-centered">
+      <div class="column is-10 has-text-centered">
+        <img src="static/images/Phantom_airways.png" alt="XCAT phantom example">
+        <p class="subtitle has-text-centered">
+          Example of a four-dimensional extended cardiac-torso (XCAT) phantom
+          developed at Duke University (Abadi et al., AJR 2020).
+        </p>
+      </div>
+    </div>
+
+    <!-- Figure 3 -->
+    <div class="columns is-centered">
+      <div class="column is-10 has-text-centered">
+        <img src="static/images/Phantom_formation.png" alt="Phantom formation workflow">
+        <p class="subtitle has-text-centered">
+          Overview of COVID-19 computational phantom development and the generation
+          of simulated CT and CXR images.
+        </p>
+      </div>
+    </div>
+
+    <!-- Figure 4 -->
+    <div class="columns is-centered">
+      <div class="column is-10 has-text-centered">
+        <img src="static/images/figure2.png" alt="COVID-19 abnormalities in XCAT phantom">
+        <p class="subtitle has-text-centered">
+          Four-dimensional extended cardiac-torso (XCAT) phantom showing three
+          COVID-19 abnormalities with different shapes (Abadi et al., AJR 2020).
+        </p>
+      </div>
+    </div>
+
+    <!-- Figure 5 -->
+    <div class="columns is-centered">
+      <div class="column is-10 has-text-centered">
+        <img src="static/images/Infection.png" alt="COVID-19 infection distribution">
+        <p class="subtitle has-text-centered">
+          Distribution of COVID-19 infections within the developed four-dimensional
+          extended cardiac-torso (XCAT) phantom.
+        </p>
+      </div>
+    </div>
+
+    <!-- Figure 6 -->
+    <div class="columns is-centered">
+      <div class="column is-10 has-text-centered">
+        <img src="static/images/result_ctcxr.png" alt="Confusion matrix CT vs CXR">
+        <p class="subtitle has-text-centered">
+          Confusion matrix of case-level COVID-19 detection performance for
+          (a) CT and (b) CXR models. Training datasets are shown in rows and testing
+          datasets in columns. Diagonal entries represent internal validation,
+          while off-diagonal entries indicate external testing. Additional testing
+          using simulated images is shown on the right. Performance is reported as
+          AUC with 95% confidence intervals.
+        </p>
+      </div>
+    </div>
+
+    <!-- Figure 7 -->
+    <div class="columns is-centered">
+      <div class="column is-10 has-text-centered">
+        <img src="static/images/imageresult.png" alt="Physics-based evaluation results">
+        <p class="subtitle has-text-centered">
+          Evaluation of physics-based factors using simulated images. Models
+          consistently performed better on CT than CXR; however, differences were
+          not statistically significant at a shared dose of 0.3 mSv. Within each
+          modality, performance remained stable across a wide range of effective
+          doses. Error bars indicate 95% confidence intervals.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End Results / Figures Section -->
+
 
 
 <!--BibTex citation -->
